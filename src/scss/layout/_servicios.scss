@@ -1,0 +1,34 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.contenido-servicios{
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+    }
+
+    h3{
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        height: 10rem;
+        
+    }
+
+    img{
+        height: 10rem;
+        width: auto;
+    }
+
+    picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicio{
+        text-align: center;
+    }
+
+}

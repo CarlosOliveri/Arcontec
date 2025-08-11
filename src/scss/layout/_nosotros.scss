@@ -1,0 +1,32 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.contenido-nosotros{
+    background-color: $azulMarino;
+
+    
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+
+
+        picture{
+            grid-column: 2 / 3;
+        }
+
+        .texto-nosotros{
+            grid-row: 1 / 2;
+            
+        }
+    }
+
+    .texto-nosotros{
+        padding: 2rem;
+
+        p{
+            color: $blanco;
+        }
+    }
+}

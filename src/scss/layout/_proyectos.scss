@@ -1,0 +1,42 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+
+.contenido-proyectos{
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2rem;
+    }
+
+    .proyecto{
+        background-color: $azulMarino;
+        margin-bottom: 2rem;
+
+        .texto-proyecto{
+            padding: 1rem;
+        }
+
+        h3,p{
+            color: $blanco;
+            margin: 1rem 2rem;
+            text-align: center;
+        }
+
+        a{
+            width: 90%;
+            margin: 2rem auto;
+        }
+
+    }
+
+    
+}
+
+.proyectos{
+    a{
+        margin-top: 3rem;
+        
+    }
+}

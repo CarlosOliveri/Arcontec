@@ -1,0 +1,19 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use 'sass:color';
+
+.boton-celeste{
+    @include boton($azulClaro);
+}
+
+.boton-azul{
+    @include boton($azulMarino);
+}
+
+.boton-blanco{
+    @include boton($blanco,$negro,block);
+}
+
+.boton{
+    border: none;
+}

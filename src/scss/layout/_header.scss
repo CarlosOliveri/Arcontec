@@ -1,0 +1,52 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.no-webp .banner-portada{
+    background-image: url("../img/banner3.png");
+}
+
+.webp .banner-portada{
+    background-image: url("../img/banner3.webp");
+}
+
+.header{
+    position: relative;
+
+    .banner-portada{
+        height: 65rem;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        .texto-banner{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $blanco;
+            z-index: 10;
+        }
+
+        h2, p{
+            margin: 0;
+            color: $blanco;
+            text-align: left;
+            line-height: 5rem;
+        }
+
+        h2{
+            font-size: 7rem;
+            font-weight: $bold;
+        }
+
+        .banner-blur{
+            background-color: rgba(5,5,5,0.3);
+            position : absolute;
+            top: 0;
+            height: 65rem;
+            width: 100%;
+        }
+    }
+
+}

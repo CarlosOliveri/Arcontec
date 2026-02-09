@@ -1,2 +1,7 @@
 node_modules
 ideas_imagenes_arcontec
+.venv
+database.db
+static/img
+*.zip
+*.rar

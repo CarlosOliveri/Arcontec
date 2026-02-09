@@ -5,3 +5,4 @@ database.db
 static/img
 *.zip
 *.rar
+package-lock.json

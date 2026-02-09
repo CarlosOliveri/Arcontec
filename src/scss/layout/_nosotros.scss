@@ -2,7 +2,7 @@
 @use '../base/mixins' as *;
 
 .contenido-nosotros{
-    background-color: $azulMarino;
+    background-color: $primario;
 
     
 
@@ -10,10 +10,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
-
+        max-height: 55rem;
+        overflow: hidden;
 
         picture{
             grid-column: 2 / 3;
+
         }
 
         .texto-nosotros{
@@ -25,8 +27,22 @@
     .texto-nosotros{
         padding: 2rem;
 
+        h2{
+            margin: 0;
+            color: $secundario;
+        }
+
         p{
             color: $blanco;
+            font-size: 2rem;
+
+            @include tablet{
+                font-size: 1.2rem;
+            }
+            @include desktop{
+                font-size: 1.8rem;
+            }
+
         }
     }
 }

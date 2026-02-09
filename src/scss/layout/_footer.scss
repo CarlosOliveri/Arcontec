@@ -2,7 +2,7 @@
 @use '../base/mixins' as m;
 
 .footer{
-    background-color: v.$blanco;
+    background-color: rgb(237, 235, 235);
     padding: calc(v.$separacion / 2) 0;
     margin-bottom: 0;
 
@@ -23,6 +23,12 @@
             opacity: 1;
             width: 50rem;
             height: auto;
+        }
+
+        .icono-redes{
+            display: flex;
+            justify-content: space-between;
+            min-width: 2rem;
         }
     }
 

@@ -2,17 +2,19 @@
 @use '../base/mixins' as *;
 
 .webp .imagen-contacto{
-    background-image: url(/build/img/oficinas.webp);
+    background-image: url(../img/oficinas.webp);
 }
 
 .no-webp .imagen-contacto{
-    background-image: url(/build/img/oficinas.png);
+    background-image: url(../img/oficinas.png);
 }
 .imagen-contacto{
+    background-image: url(../img/oficinas.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 50rem;
+    padding: 0 2rem;
 
     display: flex;
     flex-direction: column;
@@ -20,6 +22,24 @@
     align-items: center;
 
     position: relative;
+
+
+    @include tablet{
+        padding: 0 10rem;
+    }
+
+    @include desktop{
+        padding: 0 20rem;
+    }
+
+    h2{
+        font-size: 3rem;
+        
+        @include tablet{
+            font-size: 5rem;
+        }
+    }
+
 
     h2,p{
         color: $blanco;
@@ -30,6 +50,12 @@
 
     p{
         margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+
+        @include tablet{
+            font-size: 3rem;
+        }
     }
 
     .imagen-blur{

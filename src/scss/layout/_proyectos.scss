@@ -11,24 +11,48 @@
     }
 
     .proyecto{
-        background-color: $azulMarino;
+        background-color: $primario;
         margin-bottom: 2rem;
+        box-shadow: 0 2px 5px rgb(140, 140, 140);
+
+        .imagen-proyecto{
+            width: 100%;            /* ocupa todo el ancho */
+            height: 300px;          /* o la altura que quieras mostrar */
+            overflow: hidden;       /* oculta lo que se sale del contenedor */
+            position: relative;
+        
+            img{
+                width: 100%;            /* que ocupe todo el ancho */
+                height: 100%;           /* para llenar el contenedor */
+                object-fit: cover;      /* recorta manteniendo proporción */
+                object-position: center;/* centra la parte visible */
+            }
+        }
 
         .texto-proyecto{
             padding: 1rem;
-        }
+        
 
-        h3,p{
-            color: $blanco;
-            margin: 1rem 2rem;
-            text-align: center;
-        }
+            h3,p{
+                color: $blanco;
+                margin: 1rem 2rem;
+                text-align: center;
+            }
 
-        a{
-            width: 90%;
-            margin: 2rem auto;
-        }
+            h3{
+                font-size: 2rem;
+                font-weight: bold;
+            }
 
+            p{
+                font-size: 1.5rem;
+            }
+
+            a{
+                width: 90%;
+                margin: 2rem auto;
+            }
+        }
     }
 
     

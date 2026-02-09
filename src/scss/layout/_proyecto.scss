@@ -1,0 +1,25 @@
+.imagen-principal-proyecto{
+    
+    width: 100%;    
+    height: 300px;          /* o la altura que quieras mostrar */
+    overflow: hidden;       /* oculta lo que se sale del contenedor */
+    position: relative;
+
+    img{
+        width: 100%;            /* que ocupe todo el ancho */
+        height: 100%;           /* para llenar el contenedor */
+        object-fit: cover;      /* recorta manteniendo proporción */
+        object-position: center;/* centra la parte visible */
+    }
+}
+
+.imagenes-proyecto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    img{
+        width: 20rem;
+    }
+}

@@ -3,11 +3,11 @@
 @use 'sass:color';
 
 .boton-celeste{
-    @include boton($azulClaro);
+    @include boton($color-acento);
 }
 
 .boton-azul{
-    @include boton($azulMarino);
+    @include boton($primario);
 }
 
 .boton-blanco{

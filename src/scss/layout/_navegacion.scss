@@ -6,22 +6,22 @@
 
     .barra{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: $blanco;
+        background-color: rgb(237, 235, 235);
 
-        @include tablet{
+        /* @include tablet{
             flex-direction: row;
-        }
+        } */
 
         
 
         a{
             position: relative;
-
+    
             h1{
-                color: $azulMarino;
+                color: $primario;
                 font-size: 4rem;
                 font-weight: $bold;
             }
@@ -29,7 +29,7 @@
             p{
                 font-size: 1rem;
                 font-weight: 700;
-                color: $azulMarino;
+                color: $primario;
                 margin: 0;
                 position: relative;
                 top: -2rem;
@@ -38,12 +38,70 @@
         }
 
         span{
-            color: $azulClaro;
+            color: $color-acento;
         }
 
         .logo{
             margin: 0;
         }
+
+        .logo-enlace{
+            transform: translate(-70%,0%);
+            opacity: 0;
+            transition: transform 1s ease-out, opacity 1s ease-out;
+        }
+
+        .animacion-logo{
+            transform: translate(0%,0%);
+            opacity: 1;
+        }
+
+
+        .navegacion{
+            display: none;
+            gap: 1rem;
+            background-color: $perla;
+            position: absolute;
+            top: 9rem;
+            right: 0;
+            height: 100vh;
+            width: 20rem;
+            transform: translateY(-110%);
+            opacity: 0;
+            display: flex;
+            transition: transform 0.7s ease-out, opacity 0.5s ease-out;
+            z-index: 12;
+
+            &.activo{
+                display: flex;
+            }
+
+            @include tablet{
+                display: flex;
+                position: unset;
+                gap: unset;
+                height: unset;
+                width: unset;
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
+        .navegacion-activo{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+
+        .menu-hamburguesa{
+            font-size: 3.5rem;
+
+            @include tablet{
+                /* visibility: hidden; */
+                display: none;
+            }
+        }
+
+
     }
 }
 
@@ -52,18 +110,21 @@
     flex-direction: column;
     z-index: 10;
     align-items: center;
+    /* visibility: hidden; */
+
 
     a:not(:last-of-type){
-        color: $azulClaro;
+        color: $color-acento;
         font-size: 1.5rem;
         font-weight: $bold;
 
         &:hover{
-            color: $azulMarino;
+            color: $primario;
         }
     }
 
     @include tablet{
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         min-width: 45rem;

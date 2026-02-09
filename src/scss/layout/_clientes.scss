@@ -1,0 +1,10 @@
+.clientes{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img{
+        width: 10rem;
+    }
+}

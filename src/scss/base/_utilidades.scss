@@ -1,13 +1,29 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 .seccion {
     margin-top: calc($separacion / 2);
     margin-bottom: calc($separacion / 2);
 }
 .contenido-centrado {
-    max-width: 800px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.contenido-centrado-estrecho{
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .alinear-derecha{
     display: flex;
     justify-content: end;
+}
+
+.boton-container{
+    justify-content: center;
+
+    @include tablet{
+        justify-content: end;
+    }
 }

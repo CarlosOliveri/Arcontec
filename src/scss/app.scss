@@ -1,7 +1,8 @@
-@use 'base/normalize';
+/* @use 'base/normalize';
 @use 'base/variables';
 @use 'base/mixins';
 @use 'base/globales';
 @use 'base/utilidades';
-@use 'base/botones';
+@use 'base/botones'; */
+@forward 'base';
 @forward 'layout';

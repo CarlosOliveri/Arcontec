@@ -3,151 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>Arcontec</title>
+    <meta name="description" content="Ofrecemos soluciones integrales en seguridad: CCTV, control de acceso, alarmas, detección de incendios y proyectos arquitectónicos profesionales.">
+    <link rel="icon" type="image/webp" href="static/img/logo-arcontec.webp">
+    <title>Instalación de CCTV y Sistemas de Seguridad inteligentes | Arcontec</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/app.css" as="style">
 </head>
 <body>
+    <div class="contacto-fijo">
+        <a href="https://wa.me/+595991789884" aria-label="Ir a nuestro perfil de WhatsApp" aria-hidden="true">
+            <i class="fa-brands fa-whatsapp" style="color: #04e10f;"></i>
+        </a>
+    </div>
+    <button id="btnSubir" title="Volver arriba">↑</button>
     <header class="header">
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="/">
-                    <h1 class="logo">Arcon<span>tec</span></h1>
-                    <p>Arquitectura, Construcción y Tecnología</p>
+                    <div class="logo-enlace">
+                        <h1 class="logo">Arcon<span>tec</span></h1>
+                        <p>Arquitectura, Construcción y Tecnología</p>
+                    </div>
                 </a>
                 
                 <nav class="navegacion">
                     <a href="/#servicios">Servicios</a>
-                    <a href="proyectos.html">Proyectos</a>
+                    <a href="/#proyectos">Proyectos</a>
                     <a href="/#nosotros">Nosotros</a>
                     <a href="/#clientes">Clientes</a>
-                    <a href="contacto.html" class="boton-azul">Contactar</a>
+                    <a href="/contacto.html" class="boton-azul">Contactar</a>
                 </nav>
+
+                <div class="menu-hamburguesa">
+                    <a href="/"><i class="fa-solid fa-bars" style="color: #1F5889;"></i></a>
+                </div>
+
             </div>
         </div>
-        <div class="banner-portada">
+        <div class="banner-portada" style="background-image: url('static/img/banner3.webp');">
             <div class="contenedor texto-banner">
                 <h2>Tecnología y Seguridad</h2>
                 <p>Soluciones Para tu Hogar y Empresa</p>
-                <a href="contacto.html" class="boton-celeste">Solicitar Cotización</a>
+                <a href="/contacto.html" class="boton-celeste">Solicitar Cotización</a>
             </div>
             <div class="banner-blur"></div>
         </div>
     </header>
-
     <main class="contenido-principal">
-        <Section id="servicios" class="servicios contenedor">
+        <Section id="servicios" class="servicios contenedor contenido-centrado">
             <h2>Servicios</h2>
             <div class="contenido-servicios">
                 <div class="servicio">
+                    <picture>
+                        <source srcset="static/img/icono-camara2.webp" type="image/webp">
+                        <source srcset="static/img/icono-camara2.jpg" type="image/jpeg">
+                        <img src="static/img/icono-camara2.jpg" alt="Imagen de Arquitectura" loading="lazy">
+                    </picture>
                     <h3>Circuito Cerrado</h3>
-                    <picture>
-                        <source srcset="build/img/icono-camara2.webp" type="image/webp">
-                        <source srcset="build/img/icono-camara2.jpg" type="image/jpeg">
-                        <img src="build/img/icono-camara2.jpg" alt="Imagen de Arquitectura" loading="lazy">
-                    </picture>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore adipisci molestiae numquam enim impedit culpa repellat rem officia voluptatibus dignissimos!</p>
+                    <p>Sistemas de videovigilancia CCTV. Instalación de cámaras de seguridad, monitoreo remoto y soluciones personalizadas para empresas, oficinas y comercios.</p>
                 </div> <!-- .comtenido-servocio -->
                 <div class="servicio">
+                    <picture>
+                        <source srcset="static/img/icono-alarma2.webp" type="image/webp">
+                        <source srcset="static/img/icono-alarma2.jpg" type="image/jpeg">
+                        <img src="static/img/icono-alarma2.jpg" alt="Imagen de Arquitectura" loading="lazy">
+                    </picture>
                     <h3>Control de Acceso</h3>
-                    <picture>
-                        <source srcset="build/img/icono-alarma2.webp" type="image/webp">
-                        <source srcset="build/img/icono-alarma2.jpg" type="image/jpeg">
-                        <img src="build/img/icono-alarma2.jpg" alt="Imagen de Arquitectura" loading="lazy">
-                    </picture>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore adipisci molestiae numquam enim impedit culpa repellat rem officia voluptatibus dignissimos!</p>
+                    <p>Sistemas de control de acceso inteligentes. Implementamos tarjetas, huellas digitales y accesos biométricos que garantizan seguridad y eficiencia en tu empresa.</p>
                 </div> <!-- .comtenido-servocio -->
                 <div class="servicio">
+                    <picture>
+                        <source srcset="static/img/icono-incendio2.webp" type="image/webp">
+                        <source srcset="static/img/icono-incendio2.jpg" type="image/jpeg">
+                        <img src="static/img/icono-incendio2.jpg" alt="Imagen de Arquitectura" loading="lazy">
+                    </picture>
                     <h3>Sistemas de Prevención</h3>
-                    <picture>
-                        <source srcset="build/img/icono-incendio2.webp" type="image/webp">
-                        <source srcset="build/img/icono-incendio2.jpg" type="image/jpeg">
-                        <img src="build/img/icono-incendio2.jpg" alt="Imagen de Arquitectura" loading="lazy">
-                    </picture>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore adipisci molestiae numquam enim impedit culpa repellat rem officia voluptatibus dignissimos!</p>
+                    <p>Soluciones avanzadas de prevención y detección de incendios. Instalamos sistemas de alarma cumpliendo con las normativas de seguridad más exigentes.</p>
                 </div> <!-- .comtenido-servocio -->
                 <div class="servicio">
-                    <h3>Diseño y Remodelación</h3>
                     <picture>
-                        <source srcset="build/img/planos_arqui.webp" type="image/webp">
-                        <source srcset="build/img/planos_arqui.jpg" type="image/jpeg">
-                        <img src="build/img/planos_arqui.jpg" alt="Imagen de Arquitectura" loading="lazy">
+                        <source srcset="static/img/planos_arqui.webp" type="image/webp">
+                        <source srcset="static/img/planos_arqui.jpg" type="image/jpeg">
+                        <img src="static/img/planos_arqui.jpg" alt="Imagen de Arquitectura" loading="lazy">
                     </picture>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore adipisci molestiae numquam enim impedit culpa repellat rem officia voluptatibus dignissimos!</p>
+                    <h3>Diseño y Remodelación</h3>
+                    <p>Transforma tus espacios con proyectos de arquitectura y remodelación a medida. Diseño, planificación y ejecución, optimizando ambientes funcionales y modernos.</p>
                 </div> <!-- .comtenido-servocio -->
             </div> <!-- .servicios -->
+
+            <div class="alinear-derecha boton-container">
+                <a href="#productos" class="boton-celeste">Detalles de Servicios</a>
+            </div>
         </Section>
 
         <Section id="proyectos" class="contenedor proyectos seccion">
             <h2>Proyectos</h2>
             <div class="contenido-proyectos">
-                <div class="proyecto">
-                    <picture>
-                        <source srcset="build/img/camara2.webp" type="image/webp">
-                        <source srcset="build/img/camara2.jpg" type="image/jpeg">
-                        <img src="build/img/camara2.jpg" alt="Imagen de Proyecto" loading="lazy">
-                    </picture>
+                <!-- <div class="proyecto">
+                    <img src="assets/1760061826825.jpg" alt="Imagen de Proyecto" loading="lazy">
                     <div class="texto-proyecto">
-                        <h3>Cámaras de Seguridad</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur velit soluta placeat ut ad asperiores possimus laborum! Nisi, eius ex!</p>
-                        <a href="proyecto.html" class="boton-blanco">Ver proyecto</a>
+                        <h3>Control de Acceso - Edificio de Departamentos en Asunción</h3>
+                        <p>Instalación de equipos con reconocimiento biométrico para el control de acceso a instalaciones exclusivas para inquilinos del edificio. Los equipos constan de un panel de control, y varios equipos periféricos que efectúan la lectura biométrica facial y dactilar para la apertura de los accesos; portones exteriores e interiores y puertas principales e interiores.</p>
+                        <a href="proyecto.html?id=1" class="boton-blanco">Ver proyecto</a>
                     </div>
-                </div><!-- .proyecto -->
-                <div class="proyecto">
-                    <picture>
-                        <source srcset="build/img/alarma2.webp" type="image/webp">
-                        <source srcset="build/img/alarma2.jpg" type="image/jpeg">
-                        <img src="build/img/alarma2.jpg" alt="Imagen de Proyecto" loading="lazy">
-                    </picture>
-                    <div class="texto-proyecto">
-                        <h3>Control de Acceso</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur velit soluta placeat ut ad asperiores possimus laborum! Nisi, eius ex!</p>
-                        <a href="proyecto.html" class="boton-blanco">Ver proyecto</a>
-                    </div>
-                </div><!-- .proyecto -->
-                <div class="proyecto">
-                    <picture>
-                        <source srcset="build/img/incendio2.webp" type="image/webp">
-                        <source srcset="build/img/incendio2.jpg" type="image/jpeg">
-                        <img src="build/img/incendio2.jpg" alt="Imagen de Proyecto" loading="lazy">
-                    </picture>
-                    <div class="texto-proyecto">
-                        <h3>Sistemas PCI</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur velit soluta placeat ut ad asperiores possimus laborum! Nisi, eius ex!</p>
-                        <a href="proyecto.html" class="boton-blanco">Ver proyecto</a>
-                    </div>
-                </div> <!-- .proyecto -->
+                </div> -->
+                <!-- .proyecto -->
             </div> <!-- .contenido-proyectos -->
-            <div class="alinear-derecha">
-                <a href="proyectos.html" class="boton-celeste">Ver más Proyectos</a>
+
+            <div class="alinear-derecha boton-container">
+                <a href="/proyectos.html" class="boton-celeste">Ver más Proyectos</a>
             </div>
             
         </Section>
 
         <Section class="imagen-contacto seccion">
-            <h2>Protege lo que más Importa</h2>
-            <p>Soluciones Integrales en Cámaras, Alarmas y Control de Acceso Para tu Hogar y Oficinas</p>
-            <a href="" class="boton-celeste">Contactar Ahora</a>
+            <h2>Asegura tu negocio hoy mismo</h2>
+            <p>Contáctanos para recibir asesoría profesional y soluciones personalizadas en seguridad, arquitectura y prevención de incendios.</p>
+            <a href="/contacto.html" class="boton-celeste">Contactar Ahora</a>
             <div class="imagen-blur"></div>
         </Section>
 
+        <section class="seccion contenedor " id="productos">
+            <h2>Servicios Detallados</h2>
+            <div class="contenido-productos">
+
+                <!-- <a href="">
+                    <div class="producto">
+                        <div class="producto__img">
+                            <img src="assets/camara2.webp" alt="Imagen Nosotros">
+                            <div class="producto-blur"></div>
+                        </div>
+                        <div class="producto__texto">
+                            <h3>Cctv</h3>
+                            <div class="subrayar"></div>
+                        </div>
+                    </div>
+                </a> -->
+                
+            </div>
+        </section>
+
         <Section id="nosotros" class="seccion nosotros">
-            <h2>Nosotros</h2>
+            <!-- <h2>Nosotros</h2> -->
             <div class="contenido-nosotros">
                 <picture>
-                    <source srcset="build/img/alarma_config.webp" type="image/webp">
-                    <img src="build/img/alarma_config.png" alt="Imagen Nosotros">
+                    <source srcset="static/img/alarma_config.webp" type="image/webp">
+                    <img src="static/img/alarma_config.png" alt="Imagen Nosotros">
                 </picture>
                 <div class="texto-nosotros">
                     <h2>Sobre Nosotros</h2>
-                    <p>Con más de 10 años de trayectoria, Arcontec se ha consolidado como referente en soluciones de seguridad integral para hogares y oficinas empresariales. Nuestro equipo de profesionales combina experiencia, tecnología de vanguardia y un compromiso inquebrantable con la protección de lo que más importa.</p>
-                    <p>Ofrecemos servicios especializados en instalación y mantenimiento de cámaras de seguridad, control de accesos, alarmas y sistemas contra incendios, brindando confianza y tranquilidad a cada uno de nuestros clientes. En Arcontec, tu seguridad es nuestra prioridad.</p>
+                    <p>Con más de 10 años de trayectoria, Arcontec se ha consolidado como referente en soluciones de seguridad integral para hogares y oficinas empresariales. Nuestro equipo de profesionales combina experiencia, tecnología de vanguardia y un compromiso con sus necesidades.</p>
+                    <p>Ofrecemos servicios especializados en instalación y mantenimiento de cámaras de seguridad, control de accesos, alarmas de intrusos y sistemas contra incendios, brindando confianza y tranquilidad a cada uno de nuestros clientes. En Arcontec, tu seguridad es nuestra prioridad.</p>
                     
                 </div>
             </div>
         </Section>
 
-        <Section id="clientes" class="seccion clientes">
+        <Section id="clientes" class="seccion contenedor">
             <h2>Clientes</h2>
+            <div class="clientes">
+                <img src="assets/Clientes/logo-semar.webp"  type="image/webp" alt="logo de cliente">
+                <img src="assets//Clientes/meta_sport_logo.webp"  type="image/webp" alt="logo de cliente">
+                <img src="assets/Clientes/logo-Veterinaria_San_Agustin.png"  type="image/png" alt="logo de cliente">
+                <img src="assets/Clientes/logo-corporacion_mercantil.webp"  type="image/webp" alt="logo de cliente">                
+                <img src="assets/Clientes/logo-VGO.png"  type="image/png" alt="logo de cliente">
+                <img src="assets/Clientes/logo-datalab.png"  type="image/png" alt="logo de cliente">
+            </div>
         </Section>
     </main>
 
@@ -155,19 +176,25 @@
         <div class="contenedor contenido-footer">
             <div>
                 <h3>ARCONTEC</h3>
-                <div class="icono-redes">redes</div>
+                <div class="icono-redes">
+                    <a href="https://www.facebook.com/" aria-label="Ir a nuestro perfil de Facebook" aria-hidden="true"><i class="fa-brands fa-facebook" style="color: #838080;"></i></a>
+                    <a href="https://www.instagram.com/casegur_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Ir a nuestro perfil de Instagram" aria-hidden="true"><i class="fa-brands fa-instagram" style="color: #8c8c8c;"></i></a>
+                    <a href="https://wa.me/+595991789884" aria-label="Ir a nuestro perfil de WhatsApp" aria-hidden="true"><i class="fa-brands fa-whatsapp" style="color: #8a8a8a;"></i></a>
+                    <a href="https://www.linkedin.com/" aria-label="Ir a nuestro perfil de LinkedIn" aria-hidden="true"><i class="fa-brands fa-linkedin" style="color: #89898b;"></i></a>
+                </div>
             </div>
             <nav class="navegacion">
                 <a href="/#servicios">Servicios</a>
-                <a href="proyectos.html">Proyectos</a>
+                <a href="/#proyectos">Proyectos</a>
                 <a href="/#nosotros">Nosotros</a>
                 <a href="/#clientes">Clientes</a>
-                <a href="contacto.html" class="boton-azul">Contactar</a>
+                <a href="/contacto.html" class="boton-azul">Contactar</a>
             </nav>
         </div>
         <p class="footer__parrafo">Arcontec, Soluciones de Arquitectura Contrucción y Tecnología</p>
     </footer>
 
-    <script src="build/js/bundle.min.js"></script>
+    <!-- <script type="module" src="./static/js/bundle.min.js"></script> -->
+     <script type="module" src="./static/js/app.js"></script>
 </body>
-</html>
+</html>    

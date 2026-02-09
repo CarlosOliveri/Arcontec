@@ -2,6 +2,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -10,6 +11,8 @@ body {
     font-family: $fuente_principal;
     font-size: 1.6rem;
     line-height: 1.8;
+    background-color: $perla;
+    overflow-x: hidden;
 }
 p {
     color: $negro;
@@ -44,7 +47,7 @@ h1 {
 }
 h2 {
     font-size: 3.4rem;
-    color: $azulClaro;
+    color: $primario;
     font-weight: 900;
 }
 h3 {

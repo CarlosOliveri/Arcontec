@@ -7,7 +7,7 @@
     <link rel="icon" type="image/webp" href="static/img/logo-arcontec.webp">
     <title>Instalación de CCTV y Sistemas de Seguridad inteligentes | Arcontec</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="static/css/app.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
     <title>Arcontec</title>
 </head>
 <body>
@@ -16,7 +16,6 @@
             <i class="fa-brands fa-whatsapp" style="color: #04e10f;"></i>
         </a>
     </div>
-    <button id="btnSubir" title="Volver arriba">↑</button>
     <header class="header">
         <div class="contenedor contenido-header">
             <div class="barra">
@@ -30,7 +29,7 @@
                     <a href="/#proyectos">Proyectos</a>
                     <a href="/#nosotros">Nosotros</a>
                     <a href="/#clientes">Clientes</a>
-                    <a href="/contacto.html" class="boton-azul">Contactar</a>
+                    <a href="/contacto" class="boton-azul">Contactar</a>
                 </nav>
 
                 <div class="menu-hamburguesa">
@@ -39,13 +38,21 @@
 
             </div>
         </div>
-        
+        {% if current_path == '/' %}
+            <div class="banner-portada">
+                <div class="contenedor texto-banner">
+                    <h2>Tecnología y Seguridad</h2>
+                    <p>Soluciones Para tu Hogar y Empresa</p>
+                    <a href="/contacto" class="boton-celeste">Solicitar Cotización</a>
+                </div>
+                <div class="banner-blur"></div>
+            </div>
+        {% endif %}
     </header>
-    <main class="contenido-centrado">
-        <!-- <h2>Proyecto</h2> -->
 
-        
-    </main>
+        {% block content %}
+
+        {% endblock %}
 
     <footer class="footer seccion">
         <div class="contenedor contenido-footer">
@@ -63,13 +70,12 @@
                 <a href="/#proyectos">Proyectos</a>
                 <a href="/#nosotros">Nosotros</a>
                 <a href="/#clientes">Clientes</a>
-                <a href="/contacto.html" class="boton-azul">Contactar</a>
+                <a href="/contacto" class="boton-azul">Contactar</a>
             </nav>
         </div>
         <p class="footer__parrafo">Arcontec, Soluciones de Arquitectura Contrucción y Tecnología</p>
     </footer>
 
-    <script type="module" src="static/js/producto.js"></script>
-    <script type="module" src="static/js/app.js"></script>
+    <script src="{{ url_for('static', filename='js/bundle.min.js') }}"></script>
 </body>
 </html>    
